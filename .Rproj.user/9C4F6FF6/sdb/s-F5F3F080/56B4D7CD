@@ -1,0 +1,16 @@
+{
+    "contents" : "<!DOCTYPE html>\n<html>\n<body>\n\n<h3><span style=\"text-decoration: underline;\"><strong>Sources</strong></span></h3>\n\t<h4>R packages</h4>\n\t\t<p style=\"padding-left: 30px;\"><code>\"ape\"</code> (Paradis et al 2004) </p>\n\t\n\t<h4>Data</h4>\n\t\t<p style=\"padding-left: 30px;\"><strong>DATA TITLE</strong> (<code>\"file_name.txt\"</code>), FILE \t\t\t\tDESCRIPTION</p>\n    \n    <p style=\"padding-left: 30px;\"><strong>DATA TITLE</strong> (<code>\"file_name.txt\"</code>), FILE   \t\t\tDESCRIPTION</p>\n\t\t\n<h3><span style=\"text-decoration: underline;\"><strong>Codes</strong></span></h3>\n\t<h4>lme4</h4>\n\t\t<p>SOME DESCRIPTION</p>\n\t\t\n\t\t<!--begin.rcode\n\t\tR SCRIPTS HERE\n\t\tend.rcode-->\t\n\n<h3><span style=\"text-decoration: underline;\"><strong>References</strong></span></h3>\n\t<ul>\n\t<li>Bates D, Maechler M, Bolker B (2011) lme4: Linear mixed-effects models using S4 classes. R package version 0.999375-42/r1414.</li>\n\t</ul>\n\n</body>\n</html>",
+    "created" : 1411373349003.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1398743142",
+    "id" : "56B4D7CD",
+    "lastKnownWriteTime" : 1411373885,
+    "path" : "~/Documents/R projects/mpcm OPM/head_styles.html",
+    "project_path" : "head_styles.html",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "html"
+}
