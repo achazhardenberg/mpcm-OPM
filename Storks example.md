@@ -1,7 +1,3 @@
----
-output: html_document
----
-
 <h3><span style="text-decoration: underline;"><strong>Sources</strong></span></h3>  
   
   <h4>Data</h4>
@@ -36,7 +32,7 @@ storks.lm <- lm(Birth ~ Storks, data = storks.dat)
 abline(storks.lm)
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 Verify by yourself the relationship between number of storks (Storks) and human birth rates (Birth) looking at the summary of the linear model: 
 
@@ -84,7 +80,7 @@ storks3.lm <- lm(Storks ~ Area, data = storks.dat)
 abline(storks3.lm)
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 Country area seems indeed to be strongly correlated both to human birth rate and the number of stork pairs. Let's thus see what happens when we statistically control for the effect of the confounding variable Area when we include this variable in the model of the relationship between Storks and Birth:
 

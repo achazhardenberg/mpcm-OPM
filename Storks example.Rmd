@@ -1,7 +1,3 @@
----
-```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-rm(list=ls())
-```
 <h3><span style="text-decoration: underline;"><strong>Sources</strong></span></h3>  
   
   <h4>Data</h4>

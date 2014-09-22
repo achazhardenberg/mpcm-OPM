@@ -1,13 +1,10 @@
----
-output: html_document
----
-
 <h3><span style="text-decoration: underline;"><strong>Sources</strong></span></h3>
+  
   <h4>R packages</h4>
-		<p style="padding-left: 30px;"><code>"ape"</code> (Paradis et al 2004) </p>  
-    <p style="padding-left: 30px;"><code>"caper"</code> (Orme et al 2013) </p>  
+		<p style="padding-left: 30px;"><code>"ape"</code> (Paradis et al 2004) </p>
+    <p style="padding-left: 30px;"><code>"caper"</code> (Orme et al 2013) </p>
     <p style="padding-left: 30px;"><code>"nlme"</code> (Pinheiro et al 2014) </p>
-    <p style="padding-left: 30px;"><code>"geiger"</code> (Harmon et al 2008) </p> 
+    <p style="padding-left: 30px;"><code>"geiger"</code> (Harmon et al 2008) </p>
 
   <h4>Data</h4>
 		<p style="padding-left: 30px;"><strong>Rhinograds life history data</strong> (<code>"rhino.csv"</code>), comma separated file of life history traits for 100 species of Rhinogradentia. SP = Code of Species Name; BM = Average Body Mass; NL = Average Nose Length; LS = Average Litter Size; DD = Average Dispersal Distance; RS = Range Size</p>
@@ -62,7 +59,7 @@ You can also plot it if you like:
 plot(rhino.tree, cex = 0.5, no.margin = T)
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
 The first step in any comparative analysis is to ensure that the species in the dataframe match the species that are present in the phylogenetic tree. This step is not at all trivial as careful comparison of the two lists of species (those in the dataframe and those in the tree) can allow us to detect possible omissions, mismatches or typos in the species names which could lead to problems later on. To compare the species in the tree to the species in the data base you can use this handy script (the code is commented with a hashtag before each comment):
 
@@ -91,6 +88,9 @@ The first model (Model 1 in Fig 8.7) has six conditional indipendencies to be te
 
 
 ```r
+condNum <- function(V, A) {
+    (factorial(V)/(2 * factorial(V - 2))) - A
+}
 condNum(5, 4)
 ```
 
@@ -508,7 +508,7 @@ tree <- drop.tip(sim.bdtree(b = 1, d = 0, stop = "taxa", n = 101), "s101")
 plot(tree, cex = 0.5, no.margin = T)
 ```
 
-![plot of chunk unnamed-chunk-37](figure/unnamed-chunk-37.png) 
+![plot of chunk unnamed-chunk-36](figure/unnamed-chunk-36.png) 
 
 ```r
 write.tree(tree, file = "rhino2.tree")

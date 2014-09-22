@@ -1,15 +1,10 @@
----
-```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-condNum<-function(V,A){ 
-  (factorial(V)/(2*factorial(V-2)))-A
-  }
-```
 <h3><span style="text-decoration: underline;"><strong>Sources</strong></span></h3>
+  
   <h4>R packages</h4>
-		<p style="padding-left: 30px;"><code>"ape"</code> (Paradis et al 2004) </p>  
-    <p style="padding-left: 30px;"><code>"caper"</code> (Orme et al 2013) </p>  
+		<p style="padding-left: 30px;"><code>"ape"</code> (Paradis et al 2004) </p>
+    <p style="padding-left: 30px;"><code>"caper"</code> (Orme et al 2013) </p>
     <p style="padding-left: 30px;"><code>"nlme"</code> (Pinheiro et al 2014) </p>
-    <p style="padding-left: 30px;"><code>"geiger"</code> (Harmon et al 2008) </p> 
+    <p style="padding-left: 30px;"><code>"geiger"</code> (Harmon et al 2008) </p>
 
   <h4>Data</h4>
 		<p style="padding-left: 30px;"><strong>Rhinograds life history data</strong> (<code>"rhino.csv"</code>), comma separated file of life history traits for 100 species of Rhinogradentia. SP = Code of Species Name; BM = Average Body Mass; NL = Average Nose Length; LS = Average Litter Size; DD = Average Dispersal Distance; RS = Range Size</p>
@@ -73,6 +68,9 @@ com.dat<-comparative.data(rhino.tree, rhino.dat, SP, vcv=TRUE, vcv.dim=3, warn.d
 The first model (Model 1 in Fig 8.7) has six conditional indipendencies to be tested. The model is based on 5 vertices (V) and 4 arrows (A). Using this information, with a call to the function ```condNum``` (which we have defined in the "Storks Example" OPM), we can verify if indeed the number of implied conditionial indipendencies is correct:
 
 ```{r  message=FALSE, warning=FALSE, comment=NA, tidy=TRUE}
+condNum<-function(V,A){ 
+  (factorial(V)/(2*factorial(V-2)))-A
+  }
 condNum(5,4)
 ```
 
