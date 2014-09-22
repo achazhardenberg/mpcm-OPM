@@ -1,4 +1,6 @@
 packrat/lib*/
-".mpcm OPM.Rproj"
+.mpcm OPM.Rproj
 .Rhistory
 .Rproj.user
+rhino2.csv
+rhino2.tree
